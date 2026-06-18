@@ -46,8 +46,8 @@ export default async function ProjectCaseStudyPage({ params }: Props) {
   return (
     <>
       <section className="bg-slate-50">
-        <div className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
-          <ButtonLink href="/" variant="ghost" className="mb-6 px-0">
+        <div className="mx-auto w-full max-w-6xl px-4 py-14 pt-8 sm:px-6 sm:pt-10 lg:px-8">
+          <ButtonLink href="/" variant="secondary" className="mb-8">
             Back to home
           </ButtonLink>
           <h1 className="max-w-4xl text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">{project.title}</h1>
