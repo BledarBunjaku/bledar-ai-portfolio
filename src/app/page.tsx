@@ -39,7 +39,7 @@ export default function Home() {
     <>
       <ScrollSummaryBar
         title="Software Engineer building end-to-end SaaS and AI products"
-        subtitle="Remote contract work - CET"
+        subtitle="Remote / consultant / contractor - CET"
       />
       <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
@@ -47,7 +47,7 @@ export default function Home() {
             Software Engineer building end-to-end SaaS and AI products
           </h1>
           <p className="mx-auto mt-5 max-w-3xl text-center text-base font-medium uppercase leading-7 text-slate-900 sm:text-2xl sm:leading-8">
-            Remote contract work - CET
+            Remote / consultant / contractor - CET
           </p>
 
           <div className="mt-10 px-7 text-center rounded-lg border border-slate-200 bg-[#FAFAF8] p-5">
