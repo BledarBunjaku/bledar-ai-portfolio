@@ -30,7 +30,7 @@ export function ScrollSummaryBar({ title, subtitle }: ScrollSummaryBarProps) {
     >
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-1 px-4 py-3 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
         <p className="text-sm font-semibold sm:text-base">{title}</p>
-        <p className="text-xs font-medium uppercase tracking-[0.12em] text-blue-100 sm:text-sm">{subtitle}</p>
+        <p className="text-xs font-medium uppercase tracking-[0.06em] text-blue-100 sm:text-sm sm:tracking-[0.12em]">{subtitle}</p>
       </div>
     </div>
   );
