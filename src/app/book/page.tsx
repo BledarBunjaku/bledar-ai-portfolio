@@ -10,10 +10,16 @@ export const metadata: Metadata = {
 
 export default function BookPage() {
   const hasBookingUrl = Boolean(siteConfig.bookingUrl);
-  const emailSubject = encodeURIComponent("Intro call with Bledar");
-  const emailBody = encodeURIComponent(
-    "Hi Bledar,\n\nI would like to book a 20-minute intro call.\n\nMy timezone:\nPreferred days/times:\nRole/project context:\n\nThanks,",
-  );
+  const emailSubject = "Intro call with Bledar";
+  const emailBody =
+    "Hi Bledar,\n\nI would like to book a 20-minute intro call.\n\nMy timezone:\nPreferred days/times:\nRole/project context:\n\nThanks,";
+  const emailComposeUrl = `https://mail.google.com/mail/?${new URLSearchParams({
+    view: "cm",
+    fs: "1",
+    to: siteConfig.email,
+    su: emailSubject,
+    body: emailBody,
+  }).toString()}`;
 
   return (
     <Section
@@ -29,7 +35,7 @@ export default function BookPage() {
               Book Google Meet
             </ButtonLink>
           ) : (
-            <ButtonLink href={`mailto:${siteConfig.email}?subject=${emailSubject}&body=${emailBody}`}>
+            <ButtonLink href={emailComposeUrl} target="_blank" rel="noopener noreferrer">
               Request a call by email
             </ButtonLink>
           )}
@@ -45,7 +51,12 @@ export default function BookPage() {
         <div className="mt-6 border-t border-slate-200 pt-5">
           <p className="text-sm font-semibold text-slate-950">Direct contact</p>
           <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm text-slate-600">
-            <a href={`mailto:${siteConfig.email}`} className="font-medium text-[#1E3A8A] hover:text-[#172F72]">
+            <a
+              href={emailComposeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-[#1E3A8A] hover:text-[#172F72]"
+            >
               {siteConfig.email}
             </a>
             <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="font-medium text-[#1E3A8A] hover:text-[#172F72]">

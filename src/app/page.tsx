@@ -9,6 +9,9 @@ const productionStack = [
   "JavaScript",
   "TypeScript",
   "Tailwind CSS",
+  "AI integration",
+  "OpenAI",
+  "Claude",
   "React Hook Form",
   "Zustand",
   "TanStack Query",
@@ -30,8 +33,6 @@ const productionStack = [
   "Docker",
   "Git",
   "WebSockets",
-  "OpenAI",
-  "Claude",
 ];
 
 export default function Home() {
