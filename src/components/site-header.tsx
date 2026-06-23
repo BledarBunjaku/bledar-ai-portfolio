@@ -41,7 +41,7 @@ export function SiteHeader() {
           >
             LinkedIn
           </a>
-          <ButtonLink href={`mailto:${siteConfig.email}`} className="hidden lg:inline-flex">
+          <ButtonLink href={`mailto:${siteConfig.email}`} target="_blank" rel="noopener noreferrer" className="hidden lg:inline-flex">
             Email
           </ButtonLink>
         </div>
